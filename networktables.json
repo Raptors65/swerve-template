@@ -1,0 +1,466 @@
+[
+  {
+    "name": "/Preferences/wristKg",
+    "type": "double",
+    "value": -0.2,
+    "properties": {
+      "persistent": true
+    }
+  },
+  {
+    "name": "/Preferences/liftKg",
+    "type": "double",
+    "value": 0.34,
+    "properties": {
+      "persistent": true
+    }
+  },
+  {
+    "name": "/Preferences/intakeOutVolts",
+    "type": "double",
+    "value": 1.0,
+    "properties": {
+      "persistent": true
+    }
+  },
+  {
+    "name": "/Preferences/PPStrafekP",
+    "type": "double",
+    "value": 0.1,
+    "properties": {
+      "persistent": true
+    }
+  },
+  {
+    "name": "/Preferences/balancerate",
+    "type": "double",
+    "value": 1.5,
+    "properties": {
+      "persistent": true
+    }
+  },
+  {
+    "name": "/Preferences/PPXkP",
+    "type": "double",
+    "value": 0.1,
+    "properties": {
+      "persistent": true
+    }
+  },
+  {
+    "name": "/Preferences/liftKs",
+    "type": "double",
+    "value": 0.25,
+    "properties": {
+      "persistent": true
+    }
+  },
+  {
+    "name": "/Preferences/extKa",
+    "type": "double",
+    "value": 0.0,
+    "properties": {
+      "persistent": true
+    }
+  },
+  {
+    "name": "/Preferences/PPStrafekD",
+    "type": "double",
+    "value": 0.0,
+    "properties": {
+      "persistent": true
+    }
+  },
+  {
+    "name": "/Preferences/wristKv",
+    "type": "double",
+    "value": 1.65,
+    "properties": {
+      "persistent": true
+    }
+  },
+  {
+    "name": "/Preferences/liftKp",
+    "type": "double",
+    "value": 1.0,
+    "properties": {
+      "persistent": true
+    }
+  },
+  {
+    "name": "/Preferences/PPStrafekI",
+    "type": "double",
+    "value": 0.0,
+    "properties": {
+      "persistent": true
+    }
+  },
+  {
+    "name": "/Preferences/intakeInIlim",
+    "type": "double",
+    "value": 2.0,
+    "properties": {
+      "persistent": true
+    }
+  },
+  {
+    "name": "/Preferences/liftKv",
+    "type": "double",
+    "value": 0.45,
+    "properties": {
+      "persistent": true
+    }
+  },
+  {
+    "name": "/Preferences/intakeOutIlim",
+    "type": "double",
+    "value": 2.0,
+    "properties": {
+      "persistent": true
+    }
+  },
+  {
+    "name": "/Preferences/extKg",
+    "type": "double",
+    "value": 0.0,
+    "properties": {
+      "persistent": true
+    }
+  },
+  {
+    "name": "/Preferences/PPXkI",
+    "type": "double",
+    "value": 0.0,
+    "properties": {
+      "persistent": true
+    }
+  },
+  {
+    "name": "/Preferences/PPXkD",
+    "type": "double",
+    "value": 0.0,
+    "properties": {
+      "persistent": true
+    }
+  },
+  {
+    "name": "/Preferences/wristKs",
+    "type": "double",
+    "value": 0.06,
+    "properties": {
+      "persistent": true
+    }
+  },
+  {
+    "name": "/Preferences/loadYTol",
+    "type": "double",
+    "value": 0.2,
+    "properties": {
+      "persistent": true
+    }
+  },
+  {
+    "name": "/Preferences/wristKp",
+    "type": "double",
+    "value": 1.0,
+    "properties": {
+      "persistent": true
+    }
+  },
+  {
+    "name": "/Preferences/extKp",
+    "type": "double",
+    "value": 1.3,
+    "properties": {
+      "persistent": true
+    }
+  },
+  {
+    "name": "/Preferences/SwerveVElPoskD",
+    "type": "double",
+    "value": 0.0,
+    "properties": {
+      "persistent": true
+    }
+  },
+  {
+    "name": "/Preferences/ThetaTune",
+    "type": "double",
+    "value": 0.0,
+    "properties": {
+      "persistent": true
+    }
+  },
+  {
+    "name": "/Preferences/extKv",
+    "type": "double",
+    "value": 0.26,
+    "properties": {
+      "persistent": true
+    }
+  },
+  {
+    "name": "/Preferences/tapeStopTy",
+    "type": "double",
+    "value": 1.0,
+    "properties": {
+      "persistent": true
+    }
+  },
+  {
+    "name": "/Preferences/extKs",
+    "type": "double",
+    "value": 0.05,
+    "properties": {
+      "persistent": true
+    }
+  },
+  {
+    "name": "/Preferences/PPRotatekI",
+    "type": "double",
+    "value": 0.0,
+    "properties": {
+      "persistent": true
+    }
+  },
+  {
+    "name": "/Preferences/RotateTune",
+    "type": "double",
+    "value": 0.0,
+    "properties": {
+      "persistent": true
+    }
+  },
+  {
+    "name": "/Preferences/PPThetakI",
+    "type": "double",
+    "value": 0.0,
+    "properties": {
+      "persistent": true
+    }
+  },
+  {
+    "name": "/Preferences/SwerveTune",
+    "type": "double",
+    "value": 0.0,
+    "properties": {
+      "persistent": true
+    }
+  },
+  {
+    "name": "/Preferences/loadkPr",
+    "type": "double",
+    "value": 0.35,
+    "properties": {
+      "persistent": true
+    }
+  },
+  {
+    "name": "/Preferences/PPRotatekD",
+    "type": "double",
+    "value": 0.0,
+    "properties": {
+      "persistent": true
+    }
+  },
+  {
+    "name": "/Preferences/loadkPx",
+    "type": "double",
+    "value": 0.35,
+    "properties": {
+      "persistent": true
+    }
+  },
+  {
+    "name": "/Preferences/PPThetakD",
+    "type": "double",
+    "value": 0.0,
+    "properties": {
+      "persistent": true
+    }
+  },
+  {
+    "name": "/Preferences/tapekPx",
+    "type": "double",
+    "value": 0.35,
+    "properties": {
+      "persistent": true
+    }
+  },
+  {
+    "name": "/Preferences/SwerveVelPoskP",
+    "type": "double",
+    "value": 0.1,
+    "properties": {
+      "persistent": true
+    }
+  },
+  {
+    "name": "/Preferences/tapeYTol",
+    "type": "double",
+    "value": 0.2,
+    "properties": {
+      "persistent": true
+    }
+  },
+  {
+    "name": "/Preferences/PPRotatekP",
+    "type": "double",
+    "value": 0.1,
+    "properties": {
+      "persistent": true
+    }
+  },
+  {
+    "name": "/Preferences/PPThetakP",
+    "type": "double",
+    "value": 0.1,
+    "properties": {
+      "persistent": true
+    }
+  },
+  {
+    "name": "/Preferences/SwerveVelPoskI",
+    "type": "double",
+    "value": 0.0,
+    "properties": {
+      "persistent": true
+    }
+  },
+  {
+    "name": "/Preferences/balancehigh",
+    "type": "double",
+    "value": 14.3,
+    "properties": {
+      "persistent": true
+    }
+  },
+  {
+    "name": "/Preferences/PPYkP",
+    "type": "double",
+    "value": 0.1,
+    "properties": {
+      "persistent": true
+    }
+  },
+  {
+    "name": "/Preferences/tapekPr",
+    "type": "double",
+    "value": 0.12,
+    "properties": {
+      "persistent": true
+    }
+  },
+  {
+    "name": "/Preferences/PPYkI",
+    "type": "double",
+    "value": 0.0,
+    "properties": {
+      "persistent": true
+    }
+  },
+  {
+    "name": "/Preferences/SwerveVelPoskIz",
+    "type": "double",
+    "value": 0.0,
+    "properties": {
+      "persistent": true
+    }
+  },
+  {
+    "name": "/Preferences/StrafeTune",
+    "type": "double",
+    "value": 0.0,
+    "properties": {
+      "persistent": true
+    }
+  },
+  {
+    "name": "/Preferences/PPYkD",
+    "type": "double",
+    "value": 0.0,
+    "properties": {
+      "persistent": true
+    }
+  },
+  {
+    "name": "/Preferences/intakeInVolts",
+    "type": "double",
+    "value": 1.0,
+    "properties": {
+      "persistent": true
+    }
+  },
+  {
+    "name": "/Preferences/balancelow",
+    "type": "double",
+    "value": 12.5,
+    "properties": {
+      "persistent": true
+    }
+  },
+  {
+    "name": "/Preferences/SwerveTurnPoskIz",
+    "type": "double",
+    "value": 0.0,
+    "properties": {
+      "persistent": true
+    }
+  },
+  {
+    "name": "/Preferences/XTune",
+    "type": "double",
+    "value": 0.0,
+    "properties": {
+      "persistent": true
+    }
+  },
+  {
+    "name": "/Preferences/SwerveTurnPoskD",
+    "type": "double",
+    "value": 0.0,
+    "properties": {
+      "persistent": true
+    }
+  },
+  {
+    "name": "/Preferences/SwerveTurnPoskI",
+    "type": "double",
+    "value": 0.0,
+    "properties": {
+      "persistent": true
+    }
+  },
+  {
+    "name": "/Preferences/loadYOffset",
+    "type": "double",
+    "value": 0.2,
+    "properties": {
+      "persistent": true
+    }
+  },
+  {
+    "name": "/Preferences/loadStopDist",
+    "type": "double",
+    "value": 1.0,
+    "properties": {
+      "persistent": true
+    }
+  },
+  {
+    "name": "/Preferences/SwerveTurnPoskP",
+    "type": "double",
+    "value": 0.004,
+    "properties": {
+      "persistent": true
+    }
+  },
+  {
+    "name": "/Preferences/YTune",
+    "type": "double",
+    "value": 0.0,
+    "properties": {
+      "persistent": true
+    }
+  }
+]
