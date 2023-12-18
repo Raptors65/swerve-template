@@ -38,7 +38,7 @@ public class SwerveModuleSM extends SubsystemBase {
 
   public final RelativeEncoder m_driveEncoder;
 
-  private final RelativeEncoder m_turnEncoder;
+  public final RelativeEncoder m_turnEncoder;
 
   public final int m_locationIndex;
 
@@ -116,8 +116,6 @@ public class SwerveModuleSM extends SubsystemBase {
       int cancoderCanChannel,
       boolean driveMotorReversed,
       boolean turningMotorReversed,
-      int pdpDriveChannel,
-      int pdpTurnChannel,
       double turningEncoderOffset) {
 
     m_locationIndex = locationIndex;

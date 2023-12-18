@@ -30,33 +30,33 @@ public final class Constants {
 
   public static final class CanConstants {
 
+    // TODO: device IDs
     public static final int FRONT_LEFT_MODULE_DRIVE_MOTOR = 4;
     public static final int FRONT_LEFT_MODULE_STEER_MOTOR = 5;
     public static final int FRONT_LEFT_MODULE_STEER_CANCODER = 6;
-    public static final double FRONT_LEFT_MODULE_STEER_OFFSET = 231.24;// 236.5;// 231.5;// -Math.toRadians(0.0);
+    public static final double FRONT_LEFT_MODULE_STEER_OFFSET = 231.24; // TODO: this should be equal to the value of
+                                                                        // the CANCoder when the wheel is facing
+                                                                        // forward.
 
     public static final int FRONT_RIGHT_MODULE_DRIVE_MOTOR = 7;
     public static final int FRONT_RIGHT_MODULE_STEER_MOTOR = 8;
     public static final int FRONT_RIGHT_MODULE_STEER_CANCODER = 9;
-    public static final double FRONT_RIGHT_MODULE_STEER_OFFSET = 317.725; //318.8;// -Math.toRadians(-42);
+    public static final double FRONT_RIGHT_MODULE_STEER_OFFSET = 317.725; // TODO: this should be equal to the value of
+                                                                          // the CANCoder when the wheel is facing
+                                                                          // forward.
 
     public static final int BACK_LEFT_MODULE_DRIVE_MOTOR = 10;
     public static final int BACK_LEFT_MODULE_STEER_MOTOR = 11;
     public static final int BACK_LEFT_MODULE_STEER_CANCODER = 12;
-    public static final double BACK_LEFT_MODULE_STEER_OFFSET = 182.28;//185.7;// -Math.toRadians(0.0);
+    public static final double BACK_LEFT_MODULE_STEER_OFFSET = 182.28; // TODO: this should be equal to the value of the
+                                                                       // CANCoder when the wheel is facing forward.
 
     public static final int BACK_RIGHT_MODULE_DRIVE_MOTOR = 13;
     public static final int BACK_RIGHT_MODULE_STEER_MOTOR = 14;
     public static final int BACK_RIGHT_MODULE_STEER_CANCODER = 15;
-    public static final double BACK_RIGHT_MODULE_STEER_OFFSET = 254.18;//254.40;// -Math.toRadians(-105);
-
-    public static final int LIFT_ARM_MOTOR = 18;
-    public static final int EXTEND_ARM_MOTOR = 19;
-    public static final int WRIST_MOTOR = 20;
-    public static final int INTAKE_MOTOR = 21;
-    public static final int LIFT_CANCODER = 22;
-    public static final int CUBE_SENSOR = 23;
-    public static final int CONE_SENSOR = 24;
+    public static final double BACK_RIGHT_MODULE_STEER_OFFSET = 254.18; // TODO: this should be equal to the value of
+                                                                        // the CANCoder when the wheel is facing
+                                                                        // forward.
 
   }
 
@@ -69,22 +69,9 @@ public final class Constants {
 
   }
 
-  public class PDPConstants {
-
-    public static final int FRONT_LEFT_DRIVE_CHANNEL = 1;
-    public static final int FRONT_RIGHT_DRIVE_CHANNEL = 1;
-    public static final int BACK_LEFT_DRIVE_CHANNEL = 1;
-    public static final int BACK_RIGHT_DRIVE_CHANNEL = 1;
-
-    public static final int FRONT_LEFT_TURN_CHANNEL = 1;
-    public static final int FRONT_RIGHT_TURN_CHANNEL = 1;
-    public static final int BACK_LEFT_TURN_CHANNEL = 1;
-    public static final int BACK_RIGHT_TURN_CHANNEL = 1;
-
-  }
-
   public static final class DriveConstants {
 
+    // TODO: reverse motors if necessary
     public static final boolean kFrontLeftTurningMotorReversed = true;
     public static final boolean kBackLeftTurningMotorReversed = true;
     public static final boolean kFrontRightTurningMotorReversed = true;
@@ -95,6 +82,7 @@ public final class Constants {
     public static final boolean kFrontRightDriveMotorReversed = true;
     public static final boolean kBackRightDriveMotorReversed = true;
 
+    // TODO: update dimensions
     public static final double kTrackWidth = Units.inchesToMeters(22);
     // Distance between centers of right and left wheels on robot
     public static final double kWheelBase = Units.inchesToMeters(27);
@@ -105,16 +93,14 @@ public final class Constants {
     private final static Translation2d m_backRightLocation = new Translation2d(-kWheelBase / 2, -kTrackWidth / 2);
 
     public static final Translation2d[] kModuleTranslations = {
-
         m_frontLeftLocation,
         m_frontRightLocation,
         m_backLeftLocation,
-        m_backRightLocation };
+        m_backRightLocation
+    };
 
     public final static SwerveDriveKinematics m_kinematics = new SwerveDriveKinematics(
         m_frontLeftLocation, m_frontRightLocation, m_backLeftLocation, m_backRightLocation);
-
-    public static final boolean kGyroReversed = true;
 
     public static final double moduleRadius = .5;
 
@@ -128,18 +114,8 @@ public final class Constants {
 
     public static final double kMaxRotationRadiansPerSecondSquared = kMaxRotationRadiansPerSecond;
 
-    public static double kPhysicalMaxSpeedMetersPerSecond = 3.25;
-
-    public static int kPhysicalMaxAngularSpeedRadiansPerSecond = 3;
-
-    public static final TrapezoidProfile.Constraints turnConstraints
-
-        = new Constraints(90, 90);
-
     public static double kTurnP = .016;
-
     public static double kTurnI = 0;
-
     public static double kTurnD = 0;
 
   }
@@ -177,7 +153,7 @@ public final class Constants {
 
     public static double mk4iL1DriveGearRatio = 1 / ((14.0 / 50.0) * (25.0 / 19.0) * (15.0 / 45.0));// 8.14 .122807
 
-public static double mk4iL1TurnGearRatio = 1 / ((14.0 / 50.0) * (10.0 / 60.0));// 21.43 1/.046667
+    public static double mk4iL1TurnGearRatio = 1 / ((14.0 / 50.0) * (10.0 / 60.0));// 21.43 1/.046667
 
     public static final double kDriveMetersPerEncRev =
 
@@ -190,132 +166,6 @@ public static double mk4iL1TurnGearRatio = 1 / ((14.0 / 50.0) * (10.0 / 60.0));/
         360 / mk4iL1TurnGearRatio;
 
     public static double kVoltCompensation = 12.6;
-
-  }
-
-  public static final class LiftArmConstants {
-
-    public static double GEAR_RATIO = 21;
-
-    public static double PULLEY_TEETH = 30;// 24;24/30 = .8
-
-    public static double TOOTH_BELT_PITCH = Units.metersToInches(.005);// .197"
-
-    public static final double MIN_ANGLE = 29;
-
-    public static final double MAX_ANGLE = 105;
-
-    public static final double MIN_INCHES = -0.5;
-
-    public static final double MAX_INCHES = 16;
-
-    public static final double MAX_CANCODER = 98;
-
-    public static final double MIN_CANCODER = 29;
-
-    public static final double INCHES_PER_ENCODER_REV = (TOOTH_BELT_PITCH * PULLEY_TEETH) / GEAR_RATIO;// .281
-
-    public static final double MAX_RATE_INCHES_PER_SEC = (INCHES_PER_ENCODER_REV * 5700) / 60;// 26.7
-
-    public static final double LIFT_CANCODER_OFFSET = -204;
-
-    // if arm driven direct through 21:1 reduction arm speed = 5700/(60*21)= 4.5
-    // revs per sec = 1628 deg per sec
-    // compare to 80 degrees per sec gives an additional 20:1 ratio
-
-    // arm feedforward
-    public static final double ksVolts = .25;//
-
-    public static final double kgVolts = .34;
-
-    public static final TrapezoidProfile.Constraints liftArmFastConstraints
-
-        = new Constraints(20, 45); // 35
-
-    public static final double JOG_SLEW_RATE = 10;
-
-    public static final double kControllerDeadband = 0.05;
-
-    public static final double kvVoltSecondsPerInch = .45;
-
-    public static final double kAVoltSecondSquaredPerInch = 0;
-
-  }
-
-  //
-  public static final class ExtendArmConstants {
-
-    public static double GEAR_RATIO = 21;
-    public static double PULLEY_TEETH = 30;// 24;// 30
-    public static double TOOTH_BELT_PITCH = Units.metersToInches(.005);// .2
-
-    public static final double MIN_POSITION = -1;
-
-    public static final double MAX_POSITION = 26;
-
-    public static final double INCHES_PER_ENCODER_REV = TOOTH_BELT_PITCH * PULLEY_TEETH / GEAR_RATIO;// .28
-
-    public static final double MAX_RATE_INCHES_PER_SEC = (INCHES_PER_ENCODER_REV * 11000) / 60;// 51
-
-    public static double ksExtArmVolts = .05;
-
-    public static double kvExtArmVoltSecondsPerInch = .26;// 10/12 = .8 max
-
-    public static double kaExtArmVoltSecondsSquaredPerInch = 0;
-
-    public static double kControllerDeadband = 0.05;
-
-    public static final TrapezoidProfile.Constraints extendArmFastConstraints
-
-        = new Constraints(40, 60); // 25,25 40, 60
-
-    public static final double JOG_SLEW_RATE = 10;
-
-    public static final double kgVolts = 0;
-
-  }
-
-  // max speed of 20 deg per sec
-  // so 900 revs off motor = 20 degree
-
-  public static final class WristConstants {
-
-    public static final double GEAR_RATIO = 100;
-
-    public static final double MOTOR_PULLEY_TEETH = 24;
-
-    public static final double SHAFT_PULLEY_TEETH = 38;
-
-    public static final double NET_GEAR_RATIO = GEAR_RATIO * SHAFT_PULLEY_TEETH / MOTOR_PULLEY_TEETH;// 38 *100 /24
-                                                                                                     // =158.3
-
-    public static final double DEGREES_PER_ENCODER_REV = 360 / NET_GEAR_RATIO;// 360/158.3 2.27
-
-    public static final double RADIANS_PER_ENCODER_REV = Units.degreesToRadians(DEGREES_PER_ENCODER_REV);
-
-    public static final double MAX_DEGREES_PER_SEC = DEGREES_PER_ENCODER_REV * 11000 / 60;// 400
-
-    public static final double MAX_RADS_PER_SEC = Units.degreesToRadians(MAX_DEGREES_PER_SEC);// 8
-
-    public static final double MIN_ANGLE = 7;
-
-    public static final double MAX_ANGLE = 210;
-
-    public static final TrapezoidProfile.Constraints wristFastConstraints =
-
-        new Constraints(4, 8); // 2.5, 2.5
-
-    public static final double JOG_SLEW_RATE = 10;
-
-    public static final double kControllerDeadband = 0.05;
-
-    public static double ksVolts = .06;
-
-    public static double kgVolts = -0.2;
-
-    public static double kvWristVoltSecondsPerRadian = 1.65;//
-
-    public static double kaWristVoltSecondsSquaredPerRadian;
 
   }
 

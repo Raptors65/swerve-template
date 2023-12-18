@@ -31,8 +31,7 @@
     "windows": {
       "/SmartDashboard/Field2d": {
         "Swerve Modules": {
-          "arrows": false,
-          "style": "Hidden"
+          "style": "Box/Image"
         },
         "window": {
           "visible": true

@@ -31,7 +31,6 @@ import edu.wpi.first.wpilibj2.command.SubsystemBase;
 import frc.robot.Constants.CanConstants;
 import frc.robot.Constants.DriveConstants;
 import frc.robot.Constants.IDConstants;
-import frc.robot.Constants.PDPConstants;
 import frc.robot.Constants.PPConstants;
 import frc.robot.commands.Auto.DoNothing;
 import frc.robot.Pref;
@@ -51,8 +50,6 @@ public class DriveSubsystem extends SubsystemBase {
       CanConstants.FRONT_LEFT_MODULE_STEER_CANCODER,
       DriveConstants.kFrontLeftDriveMotorReversed,
       DriveConstants.kFrontLeftTurningMotorReversed,
-      PDPConstants.FRONT_LEFT_DRIVE_CHANNEL,
-      PDPConstants.FRONT_LEFT_TURN_CHANNEL,
       CanConstants.FRONT_LEFT_MODULE_STEER_OFFSET);
 
   public final SwerveModuleSM m_frontRight = new SwerveModuleSM(
@@ -62,8 +59,6 @@ public class DriveSubsystem extends SubsystemBase {
       CanConstants.FRONT_RIGHT_MODULE_STEER_CANCODER,
       DriveConstants.kFrontRightDriveMotorReversed,
       DriveConstants.kFrontRightTurningMotorReversed,
-      PDPConstants.FRONT_RIGHT_DRIVE_CHANNEL,
-      PDPConstants.FRONT_RIGHT_TURN_CHANNEL,
       CanConstants.FRONT_RIGHT_MODULE_STEER_OFFSET);
 
   public final SwerveModuleSM m_backLeft = new SwerveModuleSM(
@@ -73,8 +68,6 @@ public class DriveSubsystem extends SubsystemBase {
       CanConstants.BACK_LEFT_MODULE_STEER_CANCODER,
       DriveConstants.kBackLeftDriveMotorReversed,
       DriveConstants.kBackLeftTurningMotorReversed,
-      PDPConstants.BACK_LEFT_DRIVE_CHANNEL,
-      PDPConstants.BACK_LEFT_TURN_CHANNEL,
       CanConstants.BACK_LEFT_MODULE_STEER_OFFSET);
 
   public final SwerveModuleSM m_backRight = new SwerveModuleSM(
@@ -84,8 +77,6 @@ public class DriveSubsystem extends SubsystemBase {
       CanConstants.BACK_RIGHT_MODULE_STEER_CANCODER,
       DriveConstants.kBackRightDriveMotorReversed,
       DriveConstants.kBackRightTurningMotorReversed,
-      PDPConstants.BACK_LEFT_DRIVE_CHANNEL,
-      PDPConstants.BACK_LEFT_TURN_CHANNEL,
       CanConstants.BACK_RIGHT_MODULE_STEER_OFFSET);
 
   // The gyro sensor
@@ -213,6 +204,7 @@ public class DriveSubsystem extends SubsystemBase {
     m_frontRight.setDesiredState(swerveModuleStates[1]);
     m_backLeft.setDesiredState(swerveModuleStates[2]);
     m_backRight.setDesiredState(swerveModuleStates[3]);
+    System.out.println(m_backLeft.m_turnEncoder.getPosition());
 
   }
 
