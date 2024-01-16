@@ -438,29 +438,6 @@ public class SwerveModuleSM extends SubsystemBase {
       return 0;
   }
 
-  public double getTurnVelocity() {
-    if (RobotBase.isReal())
-      return m_turnEncoder.getVelocity();
-    else
-      return 0;// (m_turnEncoder.getVelocity() * ModuleConstants.kTurningDegreesPerEncRev) /
-               // 60;
-
-  }
-
-  public double getTurnCurrent() {
-    if (RobotBase.isReal())
-      return m_turnMotor.getOutputCurrent();
-    else
-      return 0;
-  }
-
-  public double getTurnAppliedOutput() {
-    if (RobotBase.isReal())
-      return m_turnMotor.getAppliedOutput();
-    else
-      return 0;
-  }
-
   public boolean turnInPosition(double targetAngle) {
     return Math.abs(targetAngle - getTurnAngleDegs()) < toleranceDeg;
   }

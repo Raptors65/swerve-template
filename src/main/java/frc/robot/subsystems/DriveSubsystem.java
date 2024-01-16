@@ -204,7 +204,7 @@ public class DriveSubsystem extends SubsystemBase {
     m_frontRight.setDesiredState(swerveModuleStates[1]);
     m_backLeft.setDesiredState(swerveModuleStates[2]);
     m_backRight.setDesiredState(swerveModuleStates[3]);
-    System.out.println(m_backLeft.m_turnEncoder.getPosition());
+    System.out.println(m_backLeft.m_turnEncoder.getPosition() + " " + m_backLeft.getState().angle.getDegrees());
 
   }
 
